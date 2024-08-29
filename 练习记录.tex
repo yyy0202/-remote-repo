@@ -1,0 +1,83 @@
+
+\documentclass[a4paper]{article}  
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings}
+\begin{document}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{pic/2.4.jpg}
+  \caption{学习插入图片}
+
+\vspace{5em}
+  \begin{tabular}{|r|l|}
+  \hline
+          姓名      & 闫枳冰 \\
+\hline
+  专业 &   计算机科学与技术\\
+  \hline
+\end{tabular}
+
+  \begin{tabular}{l|r|r}
+      Item &Quantity&Price(\$) \\ 
+      \hline
+      Nails &500&0.34\\
+      Wooden boards&100&4.00\\
+      Bricks&240&11.50\\
+      
+  \end{tabular}
+
+\end{figure}
+
+\lstset{
+ columns=fixed,       
+ numbers=left,                                       
+ numberstyle=\tiny\color{gray},                      
+ frame=none,                                         
+ backgroundcolor=\color[RGB]{245,245,244},           
+ keywordstyle=\color{blue},    
+ stringstyle=\rmfamily\color[RGB]{128,0,0},
+ language=c++,                                      
+}
+\begin{lstlisting}
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout<<"hello"<<endl;
+    return 0;
+}
+\end{lstlisting}
+
+
+
+
+
+Item \#A\textbackslash642 costs \$8 \& is sold at a \^{}10\% profit.
+
+\textit{字有效果}
+
+\colorbox{red}{背景红}
+
+{\huge 大}
+
+{\color{red}\textit{{\huge 效果+红+大}}}
+
+\section{一级1}
+
+\subsection{二级}
+\subsubsection{三级1}
+\subsubsection{三级2}
+\paragraph{四级1}
+\paragraph{四级2}
+\section{一级2}
+\section{一级3}
+
+\end{document}
